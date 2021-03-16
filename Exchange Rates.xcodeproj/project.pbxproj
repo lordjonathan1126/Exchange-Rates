@@ -17,6 +17,8 @@
 		FCD0DEEF2600BAC300CB4795 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEEE2600BAC300CB4795 /* Alamofire */; };
 		FCD0DEF32600BAD800CB4795 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */; };
 		FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DEF62600BBC000CB4795 /* WebService.swift */; };
+		FCD0DF032600C97300CB4795 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */; };
+		FCD0DF062600C97900CB4795 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DF052600C97800CB4795 /* Rates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FCD0DEE42600BA7B00CB4795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD0DEE62600BA7B00CB4795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCD0DEF62600BBC000CB4795 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		FCD0DF052600C97800CB4795 /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +68,51 @@
 		FCD0DED42600BA7A00CB4795 /* Exchange Rates */ = {
 			isa = PBXGroup;
 			children = (
-				FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */,
-				FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */,
-				FCD0DED92600BA7A00CB4795 /* ViewController.swift */,
-				FCD0DEDB2600BA7A00CB4795 /* Main.storyboard */,
-				FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */,
+				FCD0DF002600C8AD00CB4795 /* Model */,
+				FCD0DEFD2600C87300CB4795 /* ViewController */,
+				FCD0DEFF2600C8A100CB4795 /* View */,
+				FCD0DEFC2600C86300CB4795 /* Delegates */,
 				FCD0DEE32600BA7B00CB4795 /* LaunchScreen.storyboard */,
+				FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */,
 				FCD0DEE62600BA7B00CB4795 /* Info.plist */,
-				FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */,
-				FCD0DEF62600BBC000CB4795 /* WebService.swift */,
 			);
 			path = "Exchange Rates";
+			sourceTree = "<group>";
+		};
+		FCD0DEFC2600C86300CB4795 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */,
+				FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FCD0DEFD2600C87300CB4795 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCD0DED92600BA7A00CB4795 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FCD0DEFF2600C8A100CB4795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD0DEDB2600BA7A00CB4795 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD0DF002600C8AD00CB4795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */,
+				FCD0DEF62600BBC000CB4795 /* WebService.swift */,
+				FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */,
+				FCD0DF052600C97800CB4795 /* Rates.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +197,9 @@
 				FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */,
 				FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */,
 				FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */,
+				FCD0DF062600C97900CB4795 /* Rates.swift in Sources */,
 				FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */,
+				FCD0DF032600C97300CB4795 /* Json4Swift_Base.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

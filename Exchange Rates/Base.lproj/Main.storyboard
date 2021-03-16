@@ -145,7 +145,10 @@
                             <outlet property="delegate" destination="jrx-C5-NCj" id="99q-HD-JkL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Exchange Rates" largeTitleDisplayMode="always" id="pMC-D7-aHb"/>
+                    <navigationItem key="navigationItem" title="Exchange Rates" largeTitleDisplayMode="always" id="pMC-D7-aHb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="OHW-6r-vwJ"/>
+                        <barButtonItem key="rightBarButtonItem" title="History" id="mtb-wM-syR"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrM-nM-AJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

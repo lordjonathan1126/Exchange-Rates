@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		FCD0DEE02600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */; };
 		FCD0DEE22600BA7B00CB4795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */; };
 		FCD0DEE52600BA7B00CB4795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD0DEE32600BA7B00CB4795 /* LaunchScreen.storyboard */; };
+		FCD0DEEF2600BAC300CB4795 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEEE2600BAC300CB4795 /* Alamofire */; };
+		FCD0DEF32600BAD800CB4795 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */; };
+		FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DEF62600BBC000CB4795 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,7 @@
 		FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD0DEE42600BA7B00CB4795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD0DEE62600BA7B00CB4795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD0DEF62600BBC000CB4795 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD0DEEF2600BAC300CB4795 /* Alamofire in Frameworks */,
+				FCD0DEF32600BAD800CB4795 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				FCD0DEE32600BA7B00CB4795 /* LaunchScreen.storyboard */,
 				FCD0DEE62600BA7B00CB4795 /* Info.plist */,
 				FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */,
+				FCD0DEF62600BBC000CB4795 /* WebService.swift */,
 			);
 			path = "Exchange Rates";
 			sourceTree = "<group>";
@@ -86,6 +93,10 @@
 			dependencies = (
 			);
 			name = "Exchange Rates";
+			packageProductDependencies = (
+				FCD0DEEE2600BAC300CB4795 /* Alamofire */,
+				FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */,
+			);
 			productName = "Exchange Rates";
 			productReference = FCD0DED22600BA7A00CB4795 /* Exchange Rates.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +124,10 @@
 				Base,
 			);
 			mainGroup = FCD0DEC92600BA7A00CB4795;
+			packageReferences = (
+				FCD0DEED2600BAC300CB4795 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FCD0DEF12600BAD800CB4795 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = FCD0DED32600BA7A00CB4795 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +158,7 @@
 				FCD0DEE02600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld in Sources */,
 				FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */,
 				FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */,
+				FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */,
 				FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -345,6 +361,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCD0DEED2600BAC300CB4795 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		FCD0DEF12600BAD800CB4795 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCD0DEEE2600BAC300CB4795 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCD0DEED2600BAC300CB4795 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCD0DEF12600BAD800CB4795 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */ = {

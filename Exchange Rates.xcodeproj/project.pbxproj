@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCAFC533260333A0008E00FE /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFC532260333A0008E00FE /* ExchangeRate.swift */; };
 		FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */; };
 		FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */; };
 		FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED92600BA7A00CB4795 /* ViewController.swift */; };
@@ -16,12 +17,10 @@
 		FCD0DEE52600BA7B00CB4795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD0DEE32600BA7B00CB4795 /* LaunchScreen.storyboard */; };
 		FCD0DEEF2600BAC300CB4795 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEEE2600BAC300CB4795 /* Alamofire */; };
 		FCD0DEF32600BAD800CB4795 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */; };
-		FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DEF62600BBC000CB4795 /* WebService.swift */; };
-		FCD0DF032600C97300CB4795 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */; };
-		FCD0DF062600C97900CB4795 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DF052600C97800CB4795 /* Rates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FCAFC532260333A0008E00FE /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		FCD0DED22600BA7A00CB4795 /* Exchange Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exchange Rates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +30,6 @@
 		FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD0DEE42600BA7B00CB4795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD0DEE62600BA7B00CB4795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCD0DEF62600BBC000CB4795 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
-		FCD0DF052600C97800CB4795 /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */,
-				FCD0DEF62600BBC000CB4795 /* WebService.swift */,
-				FCD0DF022600C97300CB4795 /* Json4Swift_Base.swift */,
-				FCD0DF052600C97800CB4795 /* Rates.swift */,
+				FCAFC532260333A0008E00FE /* ExchangeRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,12 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD0DEE02600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld in Sources */,
+				FCAFC533260333A0008E00FE /* ExchangeRate.swift in Sources */,
 				FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */,
 				FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */,
-				FCD0DEF72600BBC000CB4795 /* WebService.swift in Sources */,
-				FCD0DF062600C97900CB4795 /* Rates.swift in Sources */,
 				FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */,
-				FCD0DF032600C97300CB4795 /* Json4Swift_Base.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

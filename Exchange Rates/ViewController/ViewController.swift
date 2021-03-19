@@ -11,7 +11,6 @@ import Alamofire
 class ViewController: UITableViewController {
     
     var moneyPickerArray: [(money: String, value: Double)] = []
-
     
     @IBOutlet weak var fromCurrencyLabel: UILabel!
     @IBOutlet weak var toCurrencyLabel: UILabel!
@@ -109,7 +108,16 @@ class ViewController: UITableViewController {
         let valueString = (fromCurrencyTextField?.text?.isEmpty == true) ? "0.0" : fromCurrencyTextField?.text ?? "0.0"
         
         let valueFinal = Double(valueString)! * currencyDesired.value
-        toCurrencyTextField.text = String(valueFinal)
+        toCurrencyTextField.text = String(format:"%.2f", valueFinal)
+        
+        if valueString != "0.0"{
+            CoreDataManager.shared.saveHistory(date: Date(), toCurrency: currencyDesired.money, finalCurrencyValue: currencyDesired.value, fromCurrency: currencyFrom.money, value: Double(valueString)!)
+        } else{
+            let alert = UIAlertController(title: "Please enter value!", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        
     }
     
 

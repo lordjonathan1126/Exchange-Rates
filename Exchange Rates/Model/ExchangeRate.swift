@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 
 class ExchangeRate: Codable {
     let rates: [String: Double]

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FCAFC533260333A0008E00FE /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFC532260333A0008E00FE /* ExchangeRate.swift */; };
+		FCAFC55A260458B7008E00FE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFC559260458B7008E00FE /* CoreDataManager.swift */; };
+		FCAFC55D26045C2E008E00FE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFC55C26045C2E008E00FE /* HistoryViewController.swift */; };
+		FCAFC5602604646C008E00FE /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFC55F2604646C008E00FE /* HistoryView.swift */; };
 		FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */; };
 		FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */; };
 		FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0DED92600BA7A00CB4795 /* ViewController.swift */; };
@@ -19,8 +22,24 @@
 		FCD0DEF32600BAD800CB4795 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCD0DEF22600BAD800CB4795 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FCDBE41126047B4700CBD52F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FCAFC532260333A0008E00FE /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		FCAFC559260458B7008E00FE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FCAFC55C26045C2E008E00FE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		FCAFC55F2604646C008E00FE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		FCD0DED22600BA7A00CB4795 /* Exchange Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exchange Rates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD0DED52600BA7A00CB4795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD0DED72600BA7A00CB4795 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +49,7 @@
 		FCD0DEE12600BA7B00CB4795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD0DEE42600BA7B00CB4795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCD0DEE62600BA7B00CB4795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDBE3DD2604695500CBD52F /* Exchange Rates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Exchange Rates.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,7 @@
 		FCD0DED42600BA7A00CB4795 /* Exchange Rates */ = {
 			isa = PBXGroup;
 			children = (
+				FCDBE3DD2604695500CBD52F /* Exchange Rates.entitlements */,
 				FCD0DF002600C8AD00CB4795 /* Model */,
 				FCD0DEFD2600C87300CB4795 /* ViewController */,
 				FCD0DEFF2600C8A100CB4795 /* View */,
@@ -88,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD0DED92600BA7A00CB4795 /* ViewController.swift */,
+				FCAFC55C26045C2E008E00FE /* HistoryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -96,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD0DEDB2600BA7A00CB4795 /* Main.storyboard */,
+				FCAFC55F2604646C008E00FE /* HistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +128,7 @@
 			children = (
 				FCD0DEDE2600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld */,
 				FCAFC532260333A0008E00FE /* ExchangeRate.swift */,
+				FCAFC559260458B7008E00FE /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +143,7 @@
 				FCD0DECE2600BA7A00CB4795 /* Sources */,
 				FCD0DECF2600BA7A00CB4795 /* Frameworks */,
 				FCD0DED02600BA7A00CB4795 /* Resources */,
+				FCDBE41126047B4700CBD52F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -187,10 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAFC55A260458B7008E00FE /* CoreDataManager.swift in Sources */,
 				FCD0DEE02600BA7A00CB4795 /* Exchange_Rates.xcdatamodeld in Sources */,
 				FCAFC533260333A0008E00FE /* ExchangeRate.swift in Sources */,
+				FCAFC5602604646C008E00FE /* HistoryView.swift in Sources */,
 				FCD0DEDA2600BA7A00CB4795 /* ViewController.swift in Sources */,
 				FCD0DED62600BA7A00CB4795 /* AppDelegate.swift in Sources */,
+				FCAFC55D26045C2E008E00FE /* HistoryViewController.swift in Sources */,
 				FCD0DED82600BA7A00CB4795 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Exchange Rates/Exchange Rates.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65PN49W5R6;
 				INFOPLIST_FILE = "Exchange Rates/Info.plist";
@@ -348,6 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanNg.Exchange-Rates";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Exchange Rates/Exchange Rates.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65PN49W5R6;
 				INFOPLIST_FILE = "Exchange Rates/Info.plist";
@@ -368,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanNg.Exchange-Rates";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

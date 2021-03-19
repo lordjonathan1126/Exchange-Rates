@@ -43,7 +43,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    func loadMoedaSelecionada(money: (money: String, value: Double) ) {
+    func loadCurrencyFrom(money: (money: String, value: Double) ) {
         self.currencyFrom = money
         self.fromCurrencyLabel.text = money.money
         
@@ -56,7 +56,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    func loadMoedaDesejada(money: (money: String, value: Double)){
+    func loadCurrencyTo(money: (money: String, value: Double)){
         self.currencyDesired = money
         self.toCurrencyLabel.text = self.currencyDesired.0
     }
@@ -64,20 +64,20 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                openSheetMoeda(origem: true)
+                openCurrencySheet(state: true)
             } else if indexPath.row == 1 {
                 self.fromCurrencyTextField.becomeFirstResponder()
             }
         } else if indexPath.section == 1 {
             if indexPath.row == 0 {
-                openSheetMoeda(origem: false)
+                openCurrencySheet(state: false)
             } else if indexPath.row == 1 {
                 self.toCurrencyTextField.becomeFirstResponder()
             }
         }
     }
     
-    func openSheetMoeda(origem: Bool) {
+    func openCurrencySheet(state: Bool) {
         
         let vc = UIViewController()
         vc.preferredContentSize = CGSize(width: 250,height: 300)
@@ -88,10 +88,10 @@ class ViewController: UITableViewController {
         let alert = UIAlertController(title: "Currency", message: "", preferredStyle: .alert)
         alert.setValue(vc, forKey: "contentViewController")
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { alert in
-            if origem {
-                self.loadMoedaSelecionada(money: self.moneyPickerArray[pickerView.selectedRow(inComponent: 0)])
+            if state {
+                self.loadCurrencyFrom(money: self.moneyPickerArray[pickerView.selectedRow(inComponent: 0)])
             } else {
-                self.loadMoedaDesejada(money: self.moneyPickerArray[pickerView.selectedRow(inComponent: 0)])
+                self.loadCurrencyTo(money: self.moneyPickerArray[pickerView.selectedRow(inComponent: 0)])
             }
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -110,11 +110,6 @@ class ViewController: UITableViewController {
         
         let valueFinal = Double(valueString)! * currencyDesired.value
         toCurrencyTextField.text = String(valueFinal)
-//        CoreDataManager.shared.saveHistorico(data: Date(),
-//                                                 moedaDestino: moedaDesejada.moeda,
-//                                                 moedaDestinoValor: moedaDesejada.valor,
-//                                                 moedaOrigem: moedaSelecionada.moeda,
-//                                                 valorInformado: Double(valorString)!)
     }
     
 
